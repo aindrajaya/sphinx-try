@@ -5,11 +5,14 @@
 {% block localtoc %}
     <div class="localtoc">
         <p class="caption">On This Page xxxx</p>
-        <p>{{ context }}</p>  {# Debugging line #}
-        <ul>
-            {% for item in page.toc %}
-                <li><a href="{{ pathto(item[1]) }}">{{ item[0] }}</a></li>
-            {% endfor %}
-        </ul>
+        {% if page is defined and page.toc is defined %}
+            <ul>
+                {% for item in page.toc %}
+                    <li><a href="{{ pathto(item[1]) }}">{{ item[0] }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No table of contents available.</p>
+        {% endif %}
     </div>
 {% endblock %}
