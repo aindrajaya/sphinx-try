@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html data-content_root="../" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+  <meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+  <meta content="en" name="lang:search.language"/>
+  <meta content="True" name="lang:search.pipeline.stopwords"/>
+  <meta content="True" name="lang:search.pipeline.trimmer"/>
+  <meta content="No matching documents" name="lang:search.result.none"/>
+  <meta content="1 matching document" name="lang:search.result.one"/>
+  <meta content="# matching documents" name="lang:search.result.other"/>
+  <meta content="[\s\-]+" name="lang:search.tokenizer"/>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&amp;display=fallback" rel="stylesheet"/>
+  <style>
+   body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+  </style>
+  <link href="../_static/stylesheets/application.css" rel="stylesheet"/>
+  <link href="../_static/stylesheets/application-palette.css" rel="stylesheet"/>
+  <link href="../_static/stylesheets/application-fixes.css" rel="stylesheet"/>
+  <link href="../_static/fonts/material-icons.css" rel="stylesheet"/>
+  <meta content="#3f51b5" name="theme-color"/>
+  <script src="../_static/javascripts/modernizr.js">
+  </script>
+  <title>
+   Configuration Options — Test 0.0.35+11.g0d31923 documentation
+  </title>
+  <link href="../_static/pygments.css?v=83e35b93" rel="stylesheet" type="text/css"/>
+  <link href="../_static/material.css?v=79c92029" rel="stylesheet" type="text/css"/>
+  <script src="../_static/documentation_options.js?v=038dba27">
+  </script>
+  <script src="../_static/doctools.js?v=888ff710">
+  </script>
+  <script src="../_static/sphinx_highlight.js?v=dc90522c">
+  </script>
+  <link href="../genindex.html" rel="index" title="Index"/>
+  <link href="../search.html" rel="search" title="Search"/>
+  <link href="sidebars.html" rel="next" title="Sidebars"/>
+  <link href="index.html" rel="prev" title="Customization"/>
+ </head>
+ <body data-md-color-accent="cyan" data-md-color-primary="blue" dir="ltr">
+  <svg class="md-svg">
+   <defs data-children-count="0">
+    <svg height="448" id="__github" viewbox="0 0 416 448" width="416" xmlns="http://www.w3.org/2000/svg">
+     <path d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z" fill="currentColor">
+     </path>
+    </svg>
+   </defs>
+  </svg>
+  <input class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+  <input class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+  <label class="md-overlay" data-md-component="overlay" for="__drawer">
+  </label>
+  <a class="md-skip" href="#customization3/configuring" tabindex="1">
+   Skip to content
+  </a>
+  <header class="md-header" data-md-component="header">
+   <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <a class="md-header-nav__button md-logo" href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+       <i class="md-icon">
+        
+       </i>
+      </a>
+     </div>
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer">
+      </label>
+     </div>
+     <div class="md-flex__cell md-flex__cell--stretch">
+      <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+       <span class="md-header-nav__topic">
+        Test 0.0.35+11.g0d31923 documentation
+       </span>
+       <span class="md-header-nav__topic">
+        Configuration Options
+       </span>
+      </div>
+     </div>
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <label class="md-icon md-icon--search md-header-nav__button" for="__search">
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+       <label class="md-search__overlay" for="__search">
+       </label>
+       <div class="md-search__inner" role="search">
+        <form action="../search.html" class="md-search__form" method="get" name="search">
+         <input autocapitalize="off" autocomplete="off" class="md-search__input" data-md-component="query" data-md-state="active" name="q" placeholder="" search="" spellcheck="false" type="text"/>
+         <label class="md-icon md-search__icon" for="__search">
+         </label>
+         <button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+          
+         </button>
+        </form>
+        <div class="md-search__output">
+         <div class="md-search__scrollwrap" data-md-scrollfix="">
+          <div class="md-search-result" data-md-component="result">
+           <div class="md-search-result__meta">
+            Type to start searching
+           </div>
+           <ol class="md-search-result__list">
+           </ol>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script src="../_static/javascripts/version_dropdown.js">
+     </script>
+     <script>
+      var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+     </script>
+    </div>
+   </nav>
+  </header>
+  <div class="md-container">
+   <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+     <ul class="md-tabs__list">
+      <li class="md-tabs__item">
+       <a class="md-tabs__link" href="../index.html">
+        Test 0.0.35+11.g0d31923 documentation
+       </a>
+      </li>
+      <li class="md-tabs__item">
+       <a class="md-tabs__link" href="index.html">
+        Customization
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <main class="md-main">
+    <div class="md-main__inner md-grid" data-md-component="container">
+     <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav class="md-nav md-nav--primary" data-md-level="0">
+         <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a class="md-nav__button md-logo" href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+           <i class="md-icon">
+            
+           </i>
+          </a>
+          <a href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+           Test 0.0.35+11.g0d31923 documentation
+          </a>
+         </label>
+         <ul class="md-nav__list">
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Contents:
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section1/index.html">
+            Section 1 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section2/index.html">
+            Section 2 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section3/index.html">
+            Section 3 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section4/index.html">
+            Section 4 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section5/index.html">
+            Section 5 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section6/index.html">
+            Section 6 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section7/index.html">
+            Section 8 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section8/index.html">
+            Section 3 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section9/index.html">
+            Section 9 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section10/index.html">
+            Section 10 documentation with many child menu
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Other Examples
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../basics/trial.html">
+            Example no Scroll on Top
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Example Navigation
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../customization/index.html">
+            Customization
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../customization2/index.html">
+            Customization
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="index.html">
+            Customization
+           </a>
+           <ul class="md-nav__list">
+            <li class="md-nav__item">
+             <input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+             <label class="md-nav__link md-nav__link--active" for="__toc">
+              Configuration Options
+             </label>
+             <a class="md-nav__link md-nav__link--active" href="#">
+              Configuration Options
+             </a>
+             <nav class="md-nav md-nav--secondary">
+              <ul class="md-nav__list" data-md-scrollfix="">
+               <li class="md-nav__item">
+                <a class="md-nav__extra_link" href="../_sources/customization3/configuring.rst.txt">
+                 Show Source
+                </a>
+               </li>
+              </ul>
+             </nav>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="sidebars.html">
+              Sidebars
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="custom.html">
+              Customizing the layout
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav class="md-nav md-nav--secondary">
+         <ul class="md-nav__list" data-md-scrollfix="">
+          <li class="md-nav__item">
+           <a class="md-nav__extra_link" href="../_sources/customization3/configuring.rst.txt">
+            Show Source
+           </a>
+          </li>
+          <li class="md-nav__item" id="searchbox">
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-content">
+      <article class="md-content__inner md-typeset" role="main">
+       <section id="configuration-options">
+        <h1 id="customization3-configuring--page-root">
+         Configuration Options
+         <a class="headerlink" href="#customization3-configuring--page-root" title="Link to this heading">
+          ¶
+         </a>
+        </h1>
+        <dl class="simple">
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            nav_title
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Set the name to appear in the left sidebar/header. If not provided, uses
+html_short_title if defined, or html_title.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            touch_icon
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Path to a touch icon, should be 152x152 or larger.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            google_analytics_account
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Set to enable google analytics.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            repo_url
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Set the repo url for the link to appear.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            repo_name
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           The name of the repo. If must be set if repo_url is set.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            repo_type
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Must be one of github, gitlab or bitbucket.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            base_url
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Specify a base_url used to generate sitemap.xml links. If not specified, then
+no sitemap will be built.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            globaltoc_depth
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           The maximum depth of the global TOC; set it to -1 to allow unlimited depth.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            globaltoc_collapse
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           If true, TOC entries that are not ancestors of the current page are collapsed.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            globaltoc_includehidden
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           If true, the global TOC tree will also contain hidden entries.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            theme_color
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           The theme color for mobile browsers. Hex Color without the leading #.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            color_primary
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Primary color. Options are
+red, pink, purple, deep-purple, indigo, blue, light-blue, cyan,
+teal, green, light-green, lime, yellow, amber, orange, deep-orange,
+brown, grey, blue-grey, and white.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            color_accent
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Accent color. Options are
+red, pink, purple, deep-purple, indigo, blue, light-blue, cyan,
+teal, green, light-green, lime, yellow, amber, orange, and deep-orange.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            html_minify
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Minify pages after creation using htmlmin.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            html_prettify
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Prettify pages, usually only for debugging.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            css_minify
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Minify css files found in the output directory.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            logo_icon
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Set the logo icon. Should be a pre-escaped html string that indicates a
+unicode point, e.g.,
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             '&amp;#xe869'
+            </span>
+           </code>
+           which is used on this site. The code
+point refers to the
+           <a class="reference external" href="https://fonts.google.com/icons">
+            Material Icons
+           </a>
+           font.
+This set provides a reasonable set of utility icons. Most sites should not
+use
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             logo_icon
+            </span>
+           </code>
+           and instead should set
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             html_logo
+            </span>
+           </code>
+           in
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             conf.py
+            </span>
+           </code>
+           to
+point to a custom SVG icon. Note that
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             logo_icon
+            </span>
+           </code>
+           takes precedent over
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             html_logo
+            </span>
+           </code>
+           and so it should be left empty when using
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             html_logo
+            </span>
+           </code>
+           .
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            master_doc
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           Include the master document at the top of the page in the breadcrumb bar.
+You must also set this to true if you want to override the rootrellink block, in which
+case the content of the overridden block will appear
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            nav_links
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A list of dictionaries where each has three keys:
+          </p>
+          <ul class="simple">
+           <li>
+            <p>
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               href
+              </span>
+             </code>
+             : The URL or pagename (str)
+            </p>
+           </li>
+           <li>
+            <p>
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               title
+              </span>
+             </code>
+             : The title to appear (str)
+            </p>
+           </li>
+           <li>
+            <p>
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               internal
+              </span>
+             </code>
+             : Flag indicating to use pathto to find the page.  Set to False for
+external content. (bool)
+            </p>
+           </li>
+          </ul>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            heroes
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             dict[str,str]
+            </span>
+           </code>
+           where the key is a pagename and the value is the text to display in the
+page’s hero location.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            version_dropdown
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A flag indicating whether the version drop down should be included. You must supply a JSON file
+to use this feature.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            version_dropdown_text
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           The text in the version dropdown button
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            version_json
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           The location of the JSON file that contains the version information. The default assumes there
+is a file versions.json located in the root of the site.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            version_info
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A dictionary used to populate the version dropdown.  If this variable is provided, the static
+dropdown is used and any JavaScript information is ignored.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            table_classes
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A list of classes to
+           <strong>
+            not strip
+           </strong>
+           from tables. All other classes are stripped, and the default
+table has no class attribute. Custom table classes need to provide the full style for the table.
+          </p>
+         </dd>
+         <dt>
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            table_no_strip
+           </span>
+          </code>
+         </dt>
+         <dd>
+          <p>
+           A list of classes to deactivate the complete table handling by sphinx-material for this specific table,
+so that all set table classes are kept.
+Default value:
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             no-sphinx-material-strip
+            </span>
+           </code>
+           .
+          </p>
+         </dd>
+        </dl>
+       </section>
+      </article>
+     </div>
+    </div>
+   </main>
+  </div>
+  <footer class="md-footer">
+   <div class="md-footer-nav">
+    <nav class="md-footer-nav__inner md-grid">
+     <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="index.html" rel="prev" title="Customization">
+      <div class="md-flex__cell md-flex__cell--shrink">
+       <i class="md-icon md-icon--arrow-back md-footer-nav__button">
+       </i>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+       <span class="md-flex__ellipsis">
+        <span class="md-footer-nav__direction">
+         "Previous"
+        </span>
+        Customization
+       </span>
+      </div>
+     </a>
+     <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="sidebars.html" rel="next" title="Sidebars">
+      <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+       <span class="md-flex__ellipsis">
+        <span class="md-footer-nav__direction">
+         "Next"
+        </span>
+        Sidebars
+       </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+       <i class="md-icon md-icon--arrow-forward md-footer-nav__button">
+       </i>
+      </div>
+     </a>
+    </nav>
+   </div>
+   <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+     <div class="md-footer-copyright">
+      <div class="md-footer-copyright__highlight">
+       © Copyright 2023, pena.
+      </div>
+      Last updated on
+              Dec 15, 2023.
+      <br/>
+      Created using
+      <a href="http://www.sphinx-doc.org/">
+       Sphinx
+      </a>
+      7.3.0.
+             and
+      <a href="https://github.com/bashtage/sphinx-material/">
+       Material for
+              Sphinx
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="../_static/javascripts/application.js">
+  </script>
+  <script>
+   app.initialize({version: "1.0.4", url: {base: ".."}})
+  </script>
+ </body>
+</html>
