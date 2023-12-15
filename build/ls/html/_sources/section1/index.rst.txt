@@ -1,0 +1,10 @@
+.. Section 1 documentation
+==========================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Section 1 Contents:
+   :hidden:
+
+   page1
+   page2
