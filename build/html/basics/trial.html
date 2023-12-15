@@ -1,0 +1,2856 @@
+<!DOCTYPE html>
+<html data-content_root="../" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+  <meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+  <meta content="en" name="lang:search.language"/>
+  <meta content="True" name="lang:search.pipeline.stopwords"/>
+  <meta content="True" name="lang:search.pipeline.trimmer"/>
+  <meta content="No matching documents" name="lang:search.result.none"/>
+  <meta content="1 matching document" name="lang:search.result.one"/>
+  <meta content="# matching documents" name="lang:search.result.other"/>
+  <meta content="[\s\-]+" name="lang:search.tokenizer"/>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&amp;display=fallback" rel="stylesheet"/>
+  <style>
+   body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+  </style>
+  <link href="../_static/stylesheets/application.css" rel="stylesheet"/>
+  <link href="../_static/stylesheets/application-palette.css" rel="stylesheet"/>
+  <link href="../_static/stylesheets/application-fixes.css" rel="stylesheet"/>
+  <link href="../_static/fonts/material-icons.css" rel="stylesheet"/>
+  <meta content="#3f51b5" name="theme-color"/>
+  <script src="../_static/javascripts/modernizr.js">
+  </script>
+  <title>
+   Example no Scroll on Top — Test 0.0.35+11.g0d31923 documentation
+  </title>
+  <link href="../_static/pygments.css?v=83e35b93" rel="stylesheet" type="text/css"/>
+  <link href="../_static/material.css?v=79c92029" rel="stylesheet" type="text/css"/>
+  <script src="../_static/documentation_options.js?v=038dba27">
+  </script>
+  <script src="../_static/doctools.js?v=888ff710">
+  </script>
+  <script src="../_static/sphinx_highlight.js?v=dc90522c">
+  </script>
+  <link href="../genindex.html" rel="index" title="Index"/>
+  <link href="../search.html" rel="search" title="Search"/>
+  <link href="../customization/index.html" rel="next" title="Customization"/>
+  <link href="../section10/page20.html" rel="prev" title="Page 20"/>
+ </head>
+ <body data-md-color-accent="cyan" data-md-color-primary="blue" dir="ltr">
+  <svg class="md-svg">
+   <defs data-children-count="0">
+    <svg height="448" id="__github" viewbox="0 0 416 448" width="416" xmlns="http://www.w3.org/2000/svg">
+     <path d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z" fill="currentColor">
+     </path>
+    </svg>
+   </defs>
+  </svg>
+  <input class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+  <input class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+  <label class="md-overlay" data-md-component="overlay" for="__drawer">
+  </label>
+  <a class="md-skip" href="#basics/trial" tabindex="1">
+   Skip to content
+  </a>
+  <header class="md-header" data-md-component="header">
+   <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <a class="md-header-nav__button md-logo" href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+       <i class="md-icon">
+        
+       </i>
+      </a>
+     </div>
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer">
+      </label>
+     </div>
+     <div class="md-flex__cell md-flex__cell--stretch">
+      <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+       <span class="md-header-nav__topic">
+        Test 0.0.35+11.g0d31923 documentation
+       </span>
+       <span class="md-header-nav__topic">
+        Example no Scroll on Top
+       </span>
+      </div>
+     </div>
+     <div class="md-flex__cell md-flex__cell--shrink">
+      <label class="md-icon md-icon--search md-header-nav__button" for="__search">
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+       <label class="md-search__overlay" for="__search">
+       </label>
+       <div class="md-search__inner" role="search">
+        <form action="../search.html" class="md-search__form" method="get" name="search">
+         <input autocapitalize="off" autocomplete="off" class="md-search__input" data-md-component="query" data-md-state="active" name="q" placeholder="" search="" spellcheck="false" type="text"/>
+         <label class="md-icon md-search__icon" for="__search">
+         </label>
+         <button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+          
+         </button>
+        </form>
+        <div class="md-search__output">
+         <div class="md-search__scrollwrap" data-md-scrollfix="">
+          <div class="md-search-result" data-md-component="result">
+           <div class="md-search-result__meta">
+            Type to start searching
+           </div>
+           <ol class="md-search-result__list">
+           </ol>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script src="../_static/javascripts/version_dropdown.js">
+     </script>
+     <script>
+      var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+     </script>
+    </div>
+   </nav>
+  </header>
+  <div class="md-container">
+   <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+     <ul class="md-tabs__list">
+      <li class="md-tabs__item">
+       <a class="md-tabs__link" href="../index.html">
+        Test 0.0.35+11.g0d31923 documentation
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <main class="md-main">
+    <div class="md-main__inner md-grid" data-md-component="container">
+     <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav class="md-nav md-nav--primary" data-md-level="0">
+         <label class="md-nav__title md-nav__title--site" for="__drawer">
+          <a class="md-nav__button md-logo" href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+           <i class="md-icon">
+            
+           </i>
+          </a>
+          <a href="../index.html" title="Test 0.0.35+11.g0d31923 documentation">
+           Test 0.0.35+11.g0d31923 documentation
+          </a>
+         </label>
+         <ul class="md-nav__list">
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Contents:
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section1/index.html">
+            Section 1 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section2/index.html">
+            Section 2 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section3/index.html">
+            Section 3 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section4/index.html">
+            Section 4 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section5/index.html">
+            Section 5 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section6/index.html">
+            Section 6 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section7/index.html">
+            Section 8 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section8/index.html">
+            Section 3 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section9/index.html">
+            Section 9 documentation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../section10/index.html">
+            Section 10 documentation with many child menu
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Other Examples
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+           <label class="md-nav__link md-nav__link--active" for="__toc">
+            Example no Scroll on Top
+           </label>
+           <a class="md-nav__link md-nav__link--active" href="#">
+            Example no Scroll on Top
+           </a>
+           <nav class="md-nav md-nav--secondary">
+            <label class="md-nav__title" for="__toc">
+             "Contents"
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix="">
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#basics-trial--page-root">
+               Example no Scroll on Top
+              </a>
+              <nav class="md-nav">
+               <ul class="md-nav__list">
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#paragraphs">
+                  Paragraphs
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#inline-markup">
+                  Inline markup
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#lists-and-quote-like-blocks">
+                  Lists and Quote-like blocks
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#literal-blocks">
+                  Literal blocks
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#doctest-blocks">
+                  Doctest blocks
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#tables">
+                  Tables
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#hyperlinks">
+                  Hyperlinks
+                 </a>
+                 <nav class="md-nav">
+                  <ul class="md-nav__list">
+                   <li class="md-nav__item">
+                    <a class="md-nav__link" href="#external-links">
+                     External links
+                    </a>
+                   </li>
+                   <li class="md-nav__item">
+                    <a class="md-nav__link" href="#internal-links">
+                     Internal links
+                    </a>
+                   </li>
+                  </ul>
+                 </nav>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#sections">
+                  Sections
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#field-lists">
+                  Field Lists
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#roles">
+                  Roles
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#explicit-markup">
+                  Explicit Markup
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#directives">
+                  Directives
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#images">
+                  Images
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#footnotes">
+                  Footnotes
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#citations">
+                  Citations
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#substitutions">
+                  Substitutions
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#comments">
+                  Comments
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#html-metadata">
+                  HTML Metadata
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#source-encoding">
+                  Source encoding
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#gotchas">
+                  Gotchas
+                 </a>
+                </li>
+               </ul>
+              </nav>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__extra_link" href="../_sources/basics/trial.rst.txt">
+               Show Source
+              </a>
+             </li>
+            </ul>
+           </nav>
+           <ul class="md-nav__list">
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#paragraphs">
+              Paragraphs
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#inline-markup">
+              Inline markup
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#lists-and-quote-like-blocks">
+              Lists and Quote-like blocks
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#literal-blocks">
+              Literal blocks
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#doctest-blocks">
+              Doctest blocks
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#tables">
+              Tables
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#hyperlinks">
+              Hyperlinks
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#sections">
+              Sections
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#field-lists">
+              Field Lists
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#roles">
+              Roles
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#explicit-markup">
+              Explicit Markup
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#directives">
+              Directives
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#images">
+              Images
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#footnotes">
+              Footnotes
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#citations">
+              Citations
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#substitutions">
+              Substitutions
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#comments">
+              Comments
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#html-metadata">
+              HTML Metadata
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#source-encoding">
+              Source encoding
+             </a>
+            </li>
+            <li class="md-nav__item">
+             <a class="md-nav__link" href="#gotchas">
+              Gotchas
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="md-nav__item">
+           <span class="md-nav__link caption">
+            <span class="caption-text">
+             Example Navigation
+            </span>
+           </span>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../customization/index.html">
+            Customization
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../customization2/index.html">
+            Customization
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="../customization3/index.html">
+            Customization
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav class="md-nav md-nav--secondary">
+         <label class="md-nav__title" for="__toc">
+          "Contents"
+         </label>
+         <ul class="md-nav__list" data-md-scrollfix="">
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#basics-trial--page-root">
+            Example no Scroll on Top
+           </a>
+           <nav class="md-nav">
+            <ul class="md-nav__list">
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#paragraphs">
+               Paragraphs
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#inline-markup">
+               Inline markup
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#lists-and-quote-like-blocks">
+               Lists and Quote-like blocks
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#literal-blocks">
+               Literal blocks
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#doctest-blocks">
+               Doctest blocks
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#tables">
+               Tables
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#hyperlinks">
+               Hyperlinks
+              </a>
+              <nav class="md-nav">
+               <ul class="md-nav__list">
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#external-links">
+                  External links
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#internal-links">
+                  Internal links
+                 </a>
+                </li>
+               </ul>
+              </nav>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#sections">
+               Sections
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#field-lists">
+               Field Lists
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#roles">
+               Roles
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#explicit-markup">
+               Explicit Markup
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#directives">
+               Directives
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#images">
+               Images
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#footnotes">
+               Footnotes
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#citations">
+               Citations
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#substitutions">
+               Substitutions
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#comments">
+               Comments
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#html-metadata">
+               HTML Metadata
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#source-encoding">
+               Source encoding
+              </a>
+             </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#gotchas">
+               Gotchas
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__extra_link" href="../_sources/basics/trial.rst.txt">
+            Show Source
+           </a>
+          </li>
+          <li class="md-nav__item" id="searchbox">
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-content">
+      <article class="md-content__inner md-typeset" role="main">
+       <section id="example-no-scroll-on-top">
+        <span id="rst-primer">
+        </span>
+        <h1 id="basics-trial--page-root">
+         Example no Scroll on Top
+         <a class="headerlink" href="#basics-trial--page-root" title="Link to this heading">
+          ¶
+         </a>
+        </h1>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec consectetur libero. Fusce in efficitur odio, at tincidunt ex. Nam aliquam elit a aliquam pellentesque. Nulla facilisi. Sed auctor nulla id orci laoreet, ac fermentum lectus tristique. Aliquam vitae aliquam sapien. Ut in suscipit leo. Suspendisse euismod felis a quam interdum, nec auctor libero suscipit.
+        </p>
+        <div class="admonition seealso">
+         <p class="admonition-title">
+          See also
+         </p>
+         <p>
+          The authoritative
+          <a class="reference external" href="http://docutils.sourceforge.net/rst.html">
+           reStructuredText User Documentation
+          </a>
+          .  The “ref” links in this
+document link to the description of the individual constructs in the reST
+reference.
+         </p>
+        </div>
+        <section id="paragraphs">
+         <h2 id="paragraphs">
+          Paragraphs
+          <a class="headerlink" href="#paragraphs" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec consectetur libero. Fusce in efficitur odio, at tincidunt ex. Nam aliquam elit a aliquam pellentesque. Nulla facilisi. Sed auctor nulla id orci laoreet, ac fermentum lectus tristique. Aliquam vitae aliquam sapien. Ut in suscipit leo. Suspendisse euismod felis a quam interdum, nec auctor libero suscipit.
+         </p>
+        </section>
+        <section id="inline-markup">
+         <span id="rst-inline-markup">
+         </span>
+         <h2 id="inline-markup">
+          Inline markup
+          <a class="headerlink" href="#inline-markup" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          The standard reST inline markup is quite simple: use
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            one asterisk:
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              *text*
+             </span>
+            </code>
+            for emphasis (italics),
+           </p>
+          </li>
+          <li>
+           <p>
+            two asterisks:
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              **text**
+             </span>
+            </code>
+            for strong emphasis (boldface), and
+           </p>
+          </li>
+          <li>
+           <p>
+            backquotes:
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              ``text``
+             </span>
+            </code>
+            for code samples.
+           </p>
+          </li>
+         </ul>
+         <p>
+          If asterisks or backquotes appear in running text and could be confused with
+inline markup delimiters, they have to be escaped with a backslash.
+         </p>
+         <p>
+          Be aware of some restrictions of this markup:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            it may not be nested,
+           </p>
+          </li>
+          <li>
+           <p>
+            content may not start or end with whitespace:
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              *
+             </span>
+             <span class="pre">
+              text*
+             </span>
+            </code>
+            is wrong,
+           </p>
+          </li>
+          <li>
+           <p>
+            it must be separated from surrounding text by non-word characters.  Use a
+backslash escaped space to work around that:
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              thisis\
+             </span>
+             <span class="pre">
+              *one*\
+             </span>
+             <span class="pre">
+              word
+             </span>
+            </code>
+            .
+           </p>
+          </li>
+         </ul>
+         <p>
+          These restrictions may be lifted in future versions of the docutils.
+         </p>
+         <p>
+          It is also possible to replace or expand upon some of this inline markup with
+roles. Refer to
+          <a class="reference internal" href="#rst-roles-alt">
+           <span class="std std-ref">
+            Roles
+           </span>
+          </a>
+          for more information.
+         </p>
+        </section>
+        <section id="lists-and-quote-like-blocks">
+         <h2 id="lists-and-quote-like-blocks">
+          Lists and Quote-like blocks
+          <a class="headerlink" href="#lists-and-quote-like-blocks" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          List markup (
+          <a href="#id1">
+           <span class="problematic" id="id2">
+            :duref:`ref &lt;bullet-lists&gt;`
+           </span>
+          </a>
+          ) is natural: just place an asterisk at
+the start of a paragraph and indent properly.  The same goes for numbered
+lists; they can also be autonumbered using a
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            #
+           </span>
+          </code>
+          sign:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="m">*</span> This is a bulleted list.
+<span class="m">*</span> It has two items, the second
+  item uses two lines.
+</pre>
+          </div>
+         </div>
+         <ul class="simple">
+          <li>
+           <p>
+            This is a bulleted list.
+           </p>
+          </li>
+          <li>
+           <p>
+            It has two items, the second
+item uses two lines.
+           </p>
+          </li>
+         </ul>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="m">1.</span> This is a numbered list.
+<span class="m">2.</span> It has two items too.
+</pre>
+          </div>
+         </div>
+         <ol class="arabic simple">
+          <li>
+           <p>
+            This is a numbered list.
+           </p>
+          </li>
+          <li>
+           <p>
+            It has two items too.
+           </p>
+          </li>
+         </ol>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="m">#.</span> This is a numbered list.
+<span class="m">#.</span> It has two items too.
+</pre>
+          </div>
+         </div>
+         <ol class="arabic simple">
+          <li>
+           <p>
+            This is a numbered list.
+           </p>
+          </li>
+          <li>
+           <p>
+            It has two items too.
+           </p>
+          </li>
+         </ol>
+         <p>
+          Nested lists are possible, but be aware that they must be separated from the
+parent list items by blank lines:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="m">*</span> this is
+<span class="m">*</span> a list
+
+  <span class="m">*</span> with a nested list
+  <span class="m">*</span> and some subitems
+
+<span class="m">*</span> and here the parent list continues
+</pre>
+          </div>
+         </div>
+         <ul class="simple">
+          <li>
+           <p>
+            this is
+           </p>
+          </li>
+          <li>
+           <p>
+            a list
+           </p>
+           <ul>
+            <li>
+             <p>
+              with a nested list
+             </p>
+            </li>
+            <li>
+             <p>
+              and some subitems
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            and here the parent list continues
+           </p>
+          </li>
+         </ul>
+         <p>
+          Definition lists (
+          <a href="#id3">
+           <span class="problematic" id="id4">
+            :duref:`ref &lt;definition-lists&gt;`
+           </span>
+          </a>
+          ) are created as follows:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>term (up to a line of text)
+   Definition of the term, which must be indented
+
+   and can even consist of multiple paragraphs
+
+next term
+   Description.
+</pre>
+          </div>
+         </div>
+         <dl>
+          <dt>
+           term (up to a line of text)
+          </dt>
+          <dd>
+           <p>
+            Definition of the term, which must be indented
+           </p>
+           <p>
+            and can even consist of multiple paragraphs
+           </p>
+          </dd>
+          <dt>
+           next term
+          </dt>
+          <dd>
+           <p>
+            Description.
+           </p>
+          </dd>
+         </dl>
+         <p>
+          Note that the term cannot have more than one line of text.
+         </p>
+         <p>
+          Quoted paragraphs (
+          <a href="#id5">
+           <span class="problematic" id="id6">
+            :duref:`ref &lt;block-quotes&gt;`
+           </span>
+          </a>
+          ) are created by just indenting
+them more than the surrounding paragraphs.
+         </p>
+         <p>
+          Line blocks (
+          <a href="#id7">
+           <span class="problematic" id="id8">
+            :duref:`ref &lt;line-blocks&gt;`
+           </span>
+          </a>
+          ) are a way of preserving line breaks:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="o">|</span> These lines are
+<span class="o">|</span> broken exactly like in
+<span class="o">|</span> the source file.
+</pre>
+          </div>
+         </div>
+         <div class="line-block">
+          <div class="line">
+           These lines are
+          </div>
+          <div class="line">
+           broken exactly like in
+          </div>
+          <div class="line">
+           the source file.
+          </div>
+         </div>
+         <p>
+          There are also several more special blocks available:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            field lists (
+            <a href="#id9">
+             <span class="problematic" id="id10">
+              :duref:`ref &lt;field-lists&gt;`
+             </span>
+            </a>
+            , with caveats noted in
+            <a class="reference internal" href="#rst-field-lists">
+             <span class="std std-ref">
+              Field Lists
+             </span>
+            </a>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            option lists (
+            <a href="#id11">
+             <span class="problematic" id="id12">
+              :duref:`ref &lt;option-lists&gt;`
+             </span>
+            </a>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            quoted literal blocks (
+            <a href="#id13">
+             <span class="problematic" id="id14">
+              :duref:`ref &lt;quoted-literal-blocks&gt;`
+             </span>
+            </a>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            doctest blocks (
+            <a href="#id15">
+             <span class="problematic" id="id16">
+              :duref:`ref &lt;doctest-blocks&gt;`
+             </span>
+            </a>
+            )
+           </p>
+          </li>
+         </ul>
+        </section>
+        <section id="literal-blocks">
+         <span id="rst-literal-blocks">
+         </span>
+         <h2 id="literal-blocks">
+          Literal blocks
+          <a class="headerlink" href="#literal-blocks" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Literal code blocks (
+          <a href="#id17">
+           <span class="problematic" id="id18">
+            :duref:`ref &lt;literal-blocks&gt;`
+           </span>
+          </a>
+          ) are introduced by ending a
+paragraph with the special marker
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            ::
+           </span>
+          </code>
+          .  The literal block must be indented
+(and, like all paragraphs, separated from the surrounding ones by blank
+lines):
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>This is a normal text paragraph. The next paragraph is a code sample<span class="se">::</span>
+
+<span class="s">   It is not processed in any way, except</span>
+<span class="s">   that the indentation is removed.</span>
+
+<span class="s">   It can span multiple lines.</span>
+
+This is a normal text paragraph again.
+</pre>
+          </div>
+         </div>
+         <p>
+          This is a normal text paragraph. The next paragraph is a code sample:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>It is not processed in any way, except
+that the indentation is removed.
+
+It can span multiple lines.
+</pre>
+          </div>
+         </div>
+         <p>
+          This is a normal text paragraph again.
+         </p>
+         <p>
+          The handling of the
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            ::
+           </span>
+          </code>
+          marker is smart:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            If it occurs as a paragraph of its own, that paragraph is completely left out
+of the document.
+           </p>
+          </li>
+          <li>
+           <p>
+            If it is preceded by whitespace, the marker is removed.
+           </p>
+          </li>
+          <li>
+           <p>
+            If it is preceded by non-whitespace, the marker is replaced by a single
+colon.
+           </p>
+          </li>
+         </ul>
+         <p>
+          That way, the second sentence in the above example’s first paragraph would be
+rendered as “The next paragraph is a code sample:”.
+         </p>
+         <p>
+          Code highlighting can be enabled for these literal blocks on a document-wide
+basis using the
+          <code class="xref rst rst-dir docutils literal notranslate">
+           <span class="pre">
+            highlight
+           </span>
+          </code>
+          directive and on a project-wide basis
+using the
+          <code class="xref std std-confval docutils literal notranslate">
+           <span class="pre">
+            highlight_language
+           </span>
+          </code>
+          configuration option. The
+          <code class="xref rst rst-dir docutils literal notranslate">
+           <span class="pre">
+            code-block
+           </span>
+          </code>
+          directive can be used to set highlighting on a
+block-by-block basis. These directives are discussed later.
+         </p>
+        </section>
+        <section id="doctest-blocks">
+         <span id="rst-doctest-blocks">
+         </span>
+         <h2 id="doctest-blocks">
+          Doctest blocks
+          <a class="headerlink" href="#doctest-blocks" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Doctest blocks (
+          <a href="#id19">
+           <span class="problematic" id="id20">
+            :duref:`ref &lt;doctest-blocks&gt;`
+           </span>
+          </a>
+          ) are interactive Python sessions
+cut-and-pasted into docstrings. They do not require the
+          <a class="reference internal" href="#rst-literal-blocks">
+           <span class="std std-ref">
+            literal blocks
+           </span>
+          </a>
+          syntax. The doctest block must end
+with a blank line and should
+          <em>
+           not
+          </em>
+          end with with an unused prompt:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>&gt;&gt;&gt; 1 + 1
+2
+</pre>
+          </div>
+         </div>
+         <p>
+          The doctest appears below,
+         </p>
+         <div class="doctest highlight-default notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre>
+          </div>
+         </div>
+        </section>
+        <section id="tables">
+         <span id="rst-tables">
+         </span>
+         <h2 id="tables">
+          Tables
+          <a class="headerlink" href="#tables" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          For
+          <em>
+           grid tables
+          </em>
+          (
+          <a href="#id21">
+           <span class="problematic" id="id22">
+            :duref:`ref &lt;grid-tables&gt;`
+           </span>
+          </a>
+          ), you have to “paint” the cell
+grid yourself.  They look like this:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>+------------------------+------------+----------+----------+
+<span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+<span class="o">|</span> (header rows optional) |            |          |          |
++========================+============+==========+==========+
+<span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+<span class="o">|</span> body row 2             | ...        | ...      |          |
++------------------------+------------+----------+----------+
+</pre>
+          </div>
+         </div>
+         <table>
+          <thead>
+           <tr class="row-odd">
+            <th class="head">
+             <p>
+              Header row, column 1
+(header rows optional)
+             </p>
+            </th>
+            <th class="head">
+             <p>
+              Header 2
+             </p>
+            </th>
+            <th class="head">
+             <p>
+              Header 3
+             </p>
+            </th>
+            <th class="head">
+             <p>
+              Header 4
+             </p>
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr class="row-even">
+            <td>
+             <p>
+              body row 1, column 1
+             </p>
+            </td>
+            <td>
+             <p>
+              column 2
+             </p>
+            </td>
+            <td>
+             <p>
+              column 3
+             </p>
+            </td>
+            <td>
+             <p>
+              column 4
+             </p>
+            </td>
+           </tr>
+           <tr class="row-odd">
+            <td>
+             <p>
+              body row 2
+             </p>
+            </td>
+            <td>
+             <p>
+              …
+             </p>
+            </td>
+            <td>
+             <p>
+              …
+             </p>
+            </td>
+            <td>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <em>
+           Simple tables
+          </em>
+          (
+          <a href="#id23">
+           <span class="problematic" id="id24">
+            :duref:`ref &lt;simple-tables&gt;`
+           </span>
+          </a>
+          ) are easier to write, but
+limited: they must contain more than one row, and the first column cells cannot
+contain multiple lines.  They look like this:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+</pre>
+          </div>
+         </div>
+         <table>
+          <thead>
+           <tr class="row-odd">
+            <th class="head">
+             <p>
+              A
+             </p>
+            </th>
+            <th class="head">
+             <p>
+              B
+             </p>
+            </th>
+            <th class="head">
+             <p>
+              A and B
+             </p>
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr class="row-even">
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+           </tr>
+           <tr class="row-odd">
+            <td>
+             <p>
+              True
+             </p>
+            </td>
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+           </tr>
+           <tr class="row-even">
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+            <td>
+             <p>
+              True
+             </p>
+            </td>
+            <td>
+             <p>
+              False
+             </p>
+            </td>
+           </tr>
+           <tr class="row-odd">
+            <td>
+             <p>
+              True
+             </p>
+            </td>
+            <td>
+             <p>
+              True
+             </p>
+            </td>
+            <td>
+             <p>
+              True
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          Two more syntaxes are supported:
+          <em>
+           CSV tables
+          </em>
+          and
+          <em>
+           List tables
+          </em>
+          . They use an
+          <em>
+           explicit markup block
+          </em>
+          . Refer to table directives in the Sphinx documentation for more information.
+         </p>
+        </section>
+        <section id="hyperlinks">
+         <h2 id="hyperlinks">
+          Hyperlinks
+          <a class="headerlink" href="#hyperlinks" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <section id="external-links">
+          <h3 id="external-links">
+           External links
+           <a class="headerlink" href="#external-links" title="Link to this heading">
+            ¶
+           </a>
+          </h3>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="admonition important">
+           <p class="admonition-title">
+            Important
+           </p>
+           <p>
+            There must be a space between the link text and the opening &lt; for the URL.
+           </p>
+          </div>
+          <p>
+           You can also separate the link and the target definition (
+           <a href="#id25">
+            <span class="problematic" id="id26">
+             :duref:`ref
+&lt;hyperlink-targets&gt;`
+            </span>
+           </a>
+           ), like this:
+          </p>
+          <div class="highlight-rst notranslate">
+           <div class="highlight">
+            <pre><span></span>This is a paragraph that contains <span class="s">`a link`_</span>.
+
+<span class="p">..</span> <span class="nt">_a link:</span> https://domain.invalid/
+</pre>
+           </div>
+          </div>
+          <p>
+           This is a paragraph that contains
+           <a class="reference external" href="https://domain.invalid/">
+            a link
+           </a>
+           .
+          </p>
+         </section>
+         <section id="internal-links">
+          <h3 id="internal-links">
+           Internal links
+           <a class="headerlink" href="#internal-links" title="Link to this heading">
+            ¶
+           </a>
+          </h3>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </section>
+        </section>
+        <section id="sections">
+         <h2 id="sections">
+          Sections
+          <a class="headerlink" href="#sections" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <blockquote>
+          <div>
+          </div>
+         </blockquote>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              #
+             </span>
+            </code>
+            with overline, for parts
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              *
+             </span>
+            </code>
+            with overline, for chapters
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              =
+             </span>
+            </code>
+            , for sections
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              -
+             </span>
+            </code>
+            , for subsections
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              ^
+             </span>
+            </code>
+            , for subsubsections
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              "
+             </span>
+            </code>
+            , for paragraphs
+           </p>
+          </li>
+         </ul>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="field-lists">
+         <span id="rst-field-lists">
+         </span>
+         <h2 id="field-lists">
+          Field Lists
+          <a class="headerlink" href="#field-lists" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="nc">:fieldname:</span> Field content
+</pre>
+          </div>
+         </div>
+         <p>
+          They are commonly used in Python documentation:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>def my_function(my_arg, my_other_arg):
+    """A function just for me.
+
+    <span class="nc">:param my_arg:</span> The first of my arguments.
+    <span class="nc">:param my_other_arg:</span> The second of my arguments.
+
+    <span class="nc">:returns:</span> A message (just for me, of course).
+    """
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="roles">
+         <span id="rst-roles-alt">
+         </span>
+         <h2 id="roles">
+          Roles
+          <a class="headerlink" href="#roles" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <dl class="simple">
+          <dt>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </dt>
+          <dd>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              :rolename:`content`
+             </span>
+            </code>
+            .
+           </p>
+          </dd>
+         </dl>
+         <p>
+          Docutils supports the following roles:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            <a href="#id27">
+             <span class="problematic" id="id28">
+              :durole:`emphasis`
+             </span>
+            </a>
+            – equivalent of
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              *emphasis*
+             </span>
+            </code>
+            (
+            <em>
+             emphasis
+            </em>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="#id29">
+             <span class="problematic" id="id30">
+              :durole:`strong`
+             </span>
+            </a>
+            – equivalent of
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              **strong**
+             </span>
+            </code>
+            (
+            <strong>
+             strong
+            </strong>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="#id31">
+             <span class="problematic" id="id32">
+              :durole:`literal`
+             </span>
+            </a>
+            – equivalent of
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              ``literal``
+             </span>
+            </code>
+            (
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              literal
+             </span>
+            </code>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="#id33">
+             <span class="problematic" id="id34">
+              :durole:`subscript`
+             </span>
+            </a>
+            – subscript text (subscript
+            <sub>
+             subscript
+            </sub>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="#id35">
+             <span class="problematic" id="id36">
+              :durole:`superscript`
+             </span>
+            </a>
+            – superscript text (superscript
+            <sup>
+             superscript
+            </sup>
+            )
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="#id37">
+             <span class="problematic" id="id38">
+              :durole:`title-reference`
+             </span>
+            </a>
+            – for titles of books, periodicals, and other
+materials
+           </p>
+          </li>
+         </ul>
+         <p>
+          Refer to roles in the Sphinx documentation for roles added by Sphinx.
+         </p>
+        </section>
+        <section id="explicit-markup">
+         <h2 id="explicit-markup">
+          Explicit Markup
+          <a class="headerlink" href="#explicit-markup" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="directives">
+         <span id="rst-directives">
+         </span>
+         <h2 id="directives">
+          Directives
+          <a class="headerlink" href="#directives" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+          Docutils supports the following directives:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            Admonitions:
+            <a href="#id39">
+             <span class="problematic" id="id40">
+              :dudir:`attention`
+             </span>
+            </a>
+            ,
+            <a href="#id41">
+             <span class="problematic" id="id42">
+              :dudir:`caution`
+             </span>
+            </a>
+            ,
+            <a href="#id43">
+             <span class="problematic" id="id44">
+              :dudir:`danger`
+             </span>
+            </a>
+            ,
+            <a href="#id45">
+             <span class="problematic" id="id46">
+              :dudir:`error`
+             </span>
+            </a>
+            ,
+            <a href="#id47">
+             <span class="problematic" id="id48">
+              :dudir:`hint`
+             </span>
+            </a>
+            ,
+            <a href="#id49">
+             <span class="problematic" id="id50">
+              :dudir:`important`
+             </span>
+            </a>
+            ,
+            <a href="#id51">
+             <span class="problematic" id="id52">
+              :dudir:`note`
+             </span>
+            </a>
+            ,
+            <a href="#id53">
+             <span class="problematic" id="id54">
+              :dudir:`tip`
+             </span>
+            </a>
+            ,
+            <a href="#id55">
+             <span class="problematic" id="id56">
+              :dudir:`warning`
+             </span>
+            </a>
+            and the generic
+            <a href="#id57">
+             <span class="problematic" id="id58">
+              :dudir:`admonition &lt;admonitions&gt;`
+             </span>
+            </a>
+            .  (Most themes style only “note” and
+“warning” specially.)
+           </p>
+          </li>
+         </ul>
+         <div class="admonition attention">
+          <p class="admonition-title">
+           Attention
+          </p>
+          <p>
+           Attention
+          </p>
+         </div>
+         <div class="admonition caution">
+          <p class="admonition-title">
+           Caution
+          </p>
+          <p>
+           Caution
+          </p>
+         </div>
+         <div class="admonition danger">
+          <p class="admonition-title">
+           Danger
+          </p>
+          <p>
+           Danger
+          </p>
+         </div>
+         <div class="admonition error">
+          <p class="admonition-title">
+           Error
+          </p>
+          <p>
+           Error
+          </p>
+         </div>
+         <div class="admonition hint">
+          <p class="admonition-title">
+           Hint
+          </p>
+          <p>
+           Hint
+          </p>
+         </div>
+         <div class="admonition important">
+          <p class="admonition-title">
+           Important
+          </p>
+          <p>
+           Important
+          </p>
+         </div>
+         <div class="admonition note">
+          <p class="admonition-title">
+           Note
+          </p>
+          <p>
+           Note
+          </p>
+         </div>
+         <div class="admonition tip">
+          <p class="admonition-title">
+           Tip
+          </p>
+          <p>
+           Tip
+          </p>
+         </div>
+         <div class="admonition warning">
+          <p class="admonition-title">
+           Warning
+          </p>
+          <p>
+           Warning
+          </p>
+         </div>
+         <ul>
+          <li>
+           <p>
+            Images:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id59">
+               <span class="problematic" id="id60">
+                :dudir:`image`
+               </span>
+              </a>
+              (see also
+              <a class="reference internal" href="#images">
+               Images
+              </a>
+              below)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id61">
+               <span class="problematic" id="id62">
+                :dudir:`figure`
+               </span>
+              </a>
+              (an image with caption and optional legend)
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            Additional body elements:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id63">
+               <span class="problematic" id="id64">
+                :dudir:`contents &lt;table-of-contents&gt;`
+               </span>
+              </a>
+              (a local, i.e. for the current file
+only, table of contents)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id65">
+               <span class="problematic" id="id66">
+                :dudir:`container`
+               </span>
+              </a>
+              (a container with a custom class, useful to generate an
+outer
+              <code class="docutils literal notranslate">
+               <span class="pre">
+                &lt;div&gt;
+               </span>
+              </code>
+              in HTML)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id67">
+               <span class="problematic" id="id68">
+                :dudir:`rubric`
+               </span>
+              </a>
+              (a heading without relation to the document sectioning)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id69">
+               <span class="problematic" id="id70">
+                :dudir:`topic`
+               </span>
+              </a>
+              ,
+              <a href="#id71">
+               <span class="problematic" id="id72">
+                :dudir:`sidebar`
+               </span>
+              </a>
+              (special highlighted body elements)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id73">
+               <span class="problematic" id="id74">
+                :dudir:`parsed-literal`
+               </span>
+              </a>
+              (literal block that supports inline markup)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id75">
+               <span class="problematic" id="id76">
+                :dudir:`epigraph`
+               </span>
+              </a>
+              (a block quote with optional attribution line)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id77">
+               <span class="problematic" id="id78">
+                :dudir:`highlights`
+               </span>
+              </a>
+              ,
+              <a href="#id79">
+               <span class="problematic" id="id80">
+                :dudir:`pull-quote`
+               </span>
+              </a>
+              (block quotes with their own
+class attribute)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id81">
+               <span class="problematic" id="id82">
+                :dudir:`compound &lt;compound-paragraph&gt;`
+               </span>
+              </a>
+              (a compound paragraph)
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            Special tables:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id83">
+               <span class="problematic" id="id84">
+                :dudir:`table`
+               </span>
+              </a>
+              (a table with title)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id85">
+               <span class="problematic" id="id86">
+                :dudir:`csv-table`
+               </span>
+              </a>
+              (a table generated from comma-separated values)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id87">
+               <span class="problematic" id="id88">
+                :dudir:`list-table`
+               </span>
+              </a>
+              (a table generated from a list of lists)
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            Special directives:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id89">
+               <span class="problematic" id="id90">
+                :dudir:`raw &lt;raw-data-pass-through&gt;`
+               </span>
+              </a>
+              (include raw target-format markup)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id91">
+               <span class="problematic" id="id92">
+                :dudir:`include`
+               </span>
+              </a>
+              (include reStructuredText from another file) – in Sphinx,
+when given an absolute include file path, this directive takes it as
+relative to the source directory
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id93">
+               <span class="problematic" id="id94">
+                :dudir:`class`
+               </span>
+              </a>
+              (assign a class attribute to the next element)
+              <a class="footnote-reference brackets" href="#id120" id="id95" role="doc-noteref">
+               <span class="fn-bracket">
+                [
+               </span>
+               1
+               <span class="fn-bracket">
+                ]
+               </span>
+              </a>
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            HTML specifics:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id96">
+               <span class="problematic" id="id97">
+                :dudir:`meta`
+               </span>
+              </a>
+              (generation of HTML
+              <code class="docutils literal notranslate">
+               <span class="pre">
+                &lt;meta&gt;
+               </span>
+              </code>
+              tags, see also
+              <a class="reference internal" href="#html-meta">
+               <span class="std std-ref">
+                HTML Metadata
+               </span>
+              </a>
+              below)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id98">
+               <span class="problematic" id="id99">
+                :dudir:`title &lt;metadata-document-title&gt;`
+               </span>
+              </a>
+              (override document title)
+             </p>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <p>
+            Influencing markup:
+           </p>
+           <ul class="simple">
+            <li>
+             <p>
+              <a href="#id100">
+               <span class="problematic" id="id101">
+                :dudir:`default-role`
+               </span>
+              </a>
+              (set a new default role)
+             </p>
+            </li>
+            <li>
+             <p>
+              <a href="#id102">
+               <span class="problematic" id="id103">
+                :dudir:`role`
+               </span>
+              </a>
+              (create a new role)
+             </p>
+            </li>
+           </ul>
+           <p>
+            Since these are only per-file, better use Sphinx’s facilities for setting the
+            <code class="xref std std-confval docutils literal notranslate">
+             <span class="pre">
+              default_role
+             </span>
+            </code>
+            .
+           </p>
+          </li>
+         </ul>
+         <div class="admonition warning">
+          <p class="admonition-title">
+           Warning
+          </p>
+          <p>
+           Do
+           <em>
+            not
+           </em>
+           use the directives
+           <a href="#id104">
+            <span class="problematic" id="id105">
+             :dudir:`sectnum`
+            </span>
+           </a>
+           ,
+           <a href="#id106">
+            <span class="problematic" id="id107">
+             :dudir:`header`
+            </span>
+           </a>
+           and
+           <a href="#id108">
+            <span class="problematic" id="id109">
+             :dudir:`footer`
+            </span>
+           </a>
+           .
+          </p>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+,
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="ow">function</span><span class="p">::</span> foo(x)
+              foo(y, z)
+   <span class="nc">:module:</span> some.module.name
+
+   Return a line of text input from the user.
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="images">
+         <h2 id="images">
+          Images
+          <a class="headerlink" href="#images" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          reST supports an image directive (
+          <a href="#id110">
+           <span class="problematic" id="id111">
+            :dudir:`ref &lt;image&gt;`
+           </span>
+          </a>
+          ), used like so:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> gnu.png
+   (options)
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+.  For example, the file
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            sketch/spam.rst
+           </span>
+          </code>
+          could
+refer to the image
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            images/spam.png
+           </span>
+          </code>
+          as
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            ../images/spam.png
+           </span>
+          </code>
+          or
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            /images/spam.png
+           </span>
+          </code>
+          .
+         </p>
+         <dl class="simple">
+          <dt>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </dt>
+          <dd>
+           <p>
+            (e.g. the
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              _static
+             </span>
+            </code>
+            directory for HTML output.)
+           </p>
+          </dd>
+         </dl>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+          Sphinx extends the standard docutils behavior by allowing an asterisk for the
+extension:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> gnu.*
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+          Note that image file names should not contain spaces.
+         </p>
+         <div class="versionchanged">
+          <p>
+           <span class="versionmodified changed">
+            Changed in version 0.4:
+           </span>
+           Added the support for file names ending in an asterisk.
+          </p>
+         </div>
+         <div class="versionchanged">
+          <p>
+           <span class="versionmodified changed">
+            Changed in version 0.6:
+           </span>
+           Image paths can now be absolute.
+          </p>
+         </div>
+         <div class="versionchanged">
+          <p>
+           <span class="versionmodified changed">
+            Changed in version 1.5:
+           </span>
+           latex target supports pixels (default is
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             96px=1in
+            </span>
+           </code>
+           ).
+          </p>
+         </div>
+        </section>
+        <section id="footnotes">
+         <h2 id="footnotes">
+          Footnotes
+          <a class="headerlink" href="#footnotes" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          For footnotes (
+          <a href="#id112">
+           <span class="problematic" id="id113">
+            :duref:`ref &lt;footnotes&gt;`
+           </span>
+          </a>
+          ), use
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            [#name]_
+           </span>
+          </code>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>Lorem ipsum <span class="s">[#f1]_</span> dolor sit amet ... <span class="s">[#f2]_</span>
+
+<span class="p">..</span> <span class="ow">rubric</span><span class="p">::</span> Footnotes
+
+<span class="p">..</span> <span class="nt">[#f1]</span> Text of the first footnote.
+<span class="p">..</span> <span class="nt">[#f2]</span> Text of the second footnote.
+</pre>
+          </div>
+         </div>
+         <p>
+          You can also explicitly number the footnotes (
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            [1]_
+           </span>
+          </code>
+          ) or use auto-numbered
+footnotes without names (
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            [#]_
+           </span>
+          </code>
+          ).
+         </p>
+        </section>
+        <section id="citations">
+         <h2 id="citations">
+          Citations
+          <a class="headerlink" href="#citations" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span>Lorem ipsum <span class="s">[Ref]_</span> dolor sit amet.
+
+<span class="p">..</span> <span class="nt">[Ref]</span> Book or article reference, URL or whatever.
+</pre>
+          </div>
+         </div>
+         <dl class="simple">
+          <dt>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </dt>
+          <dd>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              #
+             </span>
+            </code>
+            .
+           </p>
+          </dd>
+         </dl>
+         <p>
+          Here we take a look at some actual citations of famous papers such as
+          <a class="reference internal" href="#chetty" id="id114">
+           <span>
+            [Chetty]
+           </span>
+          </a>
+          in the American Economic Review or
+          <a class="reference internal" href="#silver" id="id115">
+           <span>
+            [Silver]
+           </span>
+          </a>
+          in Nature.
+         </p>
+         <div class="citation-list" role="list">
+          <div class="citation" id="chetty" role="doc-biblioentry">
+           <span class="label">
+            <span class="fn-bracket">
+             [
+            </span>
+            <a href="#id114" role="doc-backlink">
+             Chetty
+            </a>
+            <span class="fn-bracket">
+             ]
+            </span>
+           </span>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+          </div>
+          <div class="citation" id="silver" role="doc-biblioentry">
+           <span class="label">
+            <span class="fn-bracket">
+             [
+            </span>
+            <a href="#id115" role="doc-backlink">
+             Silver
+            </a>
+            <span class="fn-bracket">
+             ]
+            </span>
+           </span>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+          </div>
+         </div>
+        </section>
+        <section id="substitutions">
+         <h2 id="substitutions">
+          Substitutions
+          <a class="headerlink" href="#substitutions" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="nt">|name|</span> <span class="ow">replace</span><span class="p">::</span> replacement <span class="ge">*text*</span>
+</pre>
+          </div>
+         </div>
+         <p>
+          or this:
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="nt">|caution|</span> <span class="ow">image</span><span class="p">::</span> warning.png
+             <span class="nc">:alt:</span> Warning!
+</pre>
+          </div>
+         </div>
+         <p>
+          See the
+          <a href="#id116">
+           <span class="problematic" id="id117">
+            :duref:`reST reference for substitutions &lt;substitution-definitions&gt;`
+           </span>
+          </a>
+          for details.
+         </p>
+         <p id="index-0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="comments">
+         <h2 id="comments">
+          Comments
+          <a class="headerlink" href="#comments" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="cp">.. This is a comment.</span>
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="cp">..</span>
+<span class="cp">   This whole indented block</span>
+<span class="cp">   is a comment.</span>
+
+<span class="cp">   Still in the comment.</span>
+</pre>
+          </div>
+         </div>
+        </section>
+        <section id="html-metadata">
+         <span id="html-meta">
+         </span>
+         <h2 id="html-metadata">
+          HTML Metadata
+          <a class="headerlink" href="#html-metadata" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
+   <span class="nc">:description:</span> The Sphinx documentation builder
+   <span class="nc">:keywords:</span> Sphinx, documentation, builder
+</pre>
+          </div>
+         </div>
+         <p>
+          will generate the following HTML output:
+         </p>
+         <div class="highlight-html notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"The Sphinx documentation builder"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Sphinx, documentation, builder"</span><span class="p">&gt;</span>
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="highlight-rst notranslate">
+          <div class="highlight">
+           <pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
+   <span class="nc">:keywords:</span> backup
+   <span class="nc">:keywords lang=en:</span> pleasefindthiskey pleasefindthiskeytoo
+   <span class="nc">:keywords lang=de:</span> bittediesenkeyfinden
+</pre>
+          </div>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              pleasefindthiskey
+             </span>
+            </code>
+            ,
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              pleasefindthiskeytoo
+             </span>
+            </code>
+            to
+            <em>
+             English
+            </em>
+            builds;
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              bittediesenkeyfinden
+             </span>
+            </code>
+            to
+            <em>
+             German
+            </em>
+            builds;
+           </p>
+          </li>
+          <li>
+           <p>
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              backup
+             </span>
+            </code>
+            to builds in all languages.
+           </p>
+          </li>
+         </ul>
+        </section>
+        <section id="source-encoding">
+         <h2 id="source-encoding">
+          Source encoding
+          <a class="headerlink" href="#source-encoding" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </section>
+        <section id="gotchas">
+         <h2 id="gotchas">
+          Gotchas
+          <a class="headerlink" href="#gotchas" title="Link to this heading">
+           ¶
+          </a>
+         </h2>
+         <p>
+          There are some problems one commonly runs into while authoring reST documents:
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            <a href="#id118">
+             <span class="problematic" id="id119">
+              **
+             </span>
+            </a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             No nested inline markup:
+            </strong>
+            Something like
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              *see
+             </span>
+             <span class="pre">
+              :func:`foo`*
+             </span>
+            </code>
+            is not
+possible.
+           </p>
+          </li>
+         </ul>
+         <p class="rubric">
+          Footnotes
+         </p>
+         <aside class="footnote-list brackets">
+          <aside class="footnote brackets" id="id120" role="doc-footnote">
+           <span class="label">
+            <span class="fn-bracket">
+             [
+            </span>
+            <a href="#id95" role="doc-backlink">
+             1
+            </a>
+            <span class="fn-bracket">
+             ]
+            </span>
+           </span>
+           <p>
+            When the default domain contains a
+            <code class="xref rst rst-dir docutils literal notranslate">
+             <span class="pre">
+              class
+             </span>
+            </code>
+            directive, this
+directive will be shadowed.  Therefore, Sphinx re-exports it as
+            <code class="xref rst rst-dir docutils literal notranslate">
+             <span class="pre">
+              rst-class
+             </span>
+            </code>
+            .
+           </p>
+          </aside>
+         </aside>
+        </section>
+       </section>
+      </article>
+     </div>
+    </div>
+   </main>
+  </div>
+  <footer class="md-footer">
+   <div class="md-footer-nav">
+    <nav class="md-footer-nav__inner md-grid">
+     <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../section10/page20.html" rel="prev" title="Page 20">
+      <div class="md-flex__cell md-flex__cell--shrink">
+       <i class="md-icon md-icon--arrow-back md-footer-nav__button">
+       </i>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+       <span class="md-flex__ellipsis">
+        <span class="md-footer-nav__direction">
+         "Previous"
+        </span>
+        Page 20
+       </span>
+      </div>
+     </a>
+     <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../customization/index.html" rel="next" title="Customization">
+      <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+       <span class="md-flex__ellipsis">
+        <span class="md-footer-nav__direction">
+         "Next"
+        </span>
+        Customization
+       </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+       <i class="md-icon md-icon--arrow-forward md-footer-nav__button">
+       </i>
+      </div>
+     </a>
+    </nav>
+   </div>
+   <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+     <div class="md-footer-copyright">
+      <div class="md-footer-copyright__highlight">
+       © Copyright 2023, pena.
+      </div>
+      Last updated on
+              Dec 15, 2023.
+      <br/>
+      Created using
+      <a href="http://www.sphinx-doc.org/">
+       Sphinx
+      </a>
+      7.3.0.
+             and
+      <a href="https://github.com/bashtage/sphinx-material/">
+       Material for
+              Sphinx
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="../_static/javascripts/application.js">
+  </script>
+  <script>
+   app.initialize({version: "1.0.4", url: {base: ".."}})
+  </script>
+ </body>
+</html>
