@@ -1,0 +1,15 @@
+<!-- custom_localtoc.html -->
+
+{%- extends "basic_localtoc.html" %}
+
+{% block localtoc %}
+    <div class="localtoc">
+        <p class="caption">On This Page xxxx</p>
+        <p>{{ context }}</p>  {# Debugging line #}
+        <ul>
+            {% for item in page.toc %}
+                <li><a href="{{ pathto(item[1]) }}">{{ item[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

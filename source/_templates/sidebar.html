@@ -1,0 +1,40 @@
+{%- extends "basic_sidebar.html" %}
+
+{%- block sidebarlocaltoc %}
+  <link rel="stylesheet" href="{{ pathto('_static/css/sidebar.css', 1) }}" type="text/css">
+  {{ super() }}
+{%- endblock %}
+
+{%- block body %}
+<!-- Custom Sidebar Content -->
+<nav class="wy-nav-side" data-toggle="#my-custom-sidebar">
+  <div class="wy-side-scroll">
+    <h5>My Custom Sidebar</h5>
+    <ul class="current">
+      <li><a href="{{ pathto('index') }}">Home</a></li>
+      <li class="toctree-l1">
+        <a href="{{ pathto('section1/index') }}">Section 1</a>
+        <ul>
+          <li><a href="{{ pathto('section1/page1') }}">Page 1</a></li>
+          <li><a href="{{ pathto('section1/page2') }}">Page 2</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l1">
+        <a href="{{ pathto('section2/index') }}">Section 2</a>
+        <ul>
+          <li><a href="{{ pathto('section2/page3') }}">Page 3</a></li>
+          <li><a href="{{ pathto('section2/page4') }}">Page 4</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l1">
+        <a href="{{ pathto('section3/index') }}">Section 3</a>
+        <ul>
+          <li><a href="{{ pathto('section3/page5') }}">Page 5</a></li>
+          <li><a href="{{ pathto('section3/page6') }}">Page 6</a></li>
+        </ul>
+      </li>
+      <!-- Add more items as needed -->
+    </ul>
+  </div>
+</nav>
+{%- endblock %}
